@@ -1,0 +1,1 @@
+<p> {{ (_stateService.state$ | async).winner? "There is a winner," : "Turn of"}} {{ (_stateService.state$ | async).turn == 'PLAYERX' ? "Player 1 - Xs" : "Player 2 - 0s" }}</p>

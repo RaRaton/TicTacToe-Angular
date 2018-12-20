@@ -1,0 +1,2 @@
+<p>Number of movements: {{ (_stateService.state$ | async).numMovs }}</p>
+<button [hidden]="_stateService.state.numMovs === 0"                                             (click)="_handlerResetClick($event)">Reset</button>
